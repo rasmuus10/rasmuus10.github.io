@@ -37,7 +37,6 @@ if (isMobile()) { // js mobile optimization :sob:
 const canvas = document.getElementById("background");
 const ctx = canvas.getContext("2d");
 
-ctx.strokeStyle = "white";
 ctx.lineWidth = 15;
 
 let r = 255;
@@ -63,7 +62,7 @@ document.addEventListener("mousemove", function(event) {
             g = 0;
             b = 180;
         }
-    }, 100);
+    }, 1);
 });
 
 document.getElementById("neocoins").innerHTML = localStorage.getItem("neocoin");
