@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../zodacss.css"> <!-- zodaCSS - my own CSS framwork -->
+</head>
+<body>
+    <h1 class="text-center">To-do list app</h1>
+    <div class="container">
+        <button id="helpBtn" title="Help">?</button>
+        <input type="text" id="input" autofocus placeholder="Enter a task here and press enter or the button" title="Enter a task">
+        <input type="button" id="btn" value="OK" onclick="call()" title="Submit your task">
+    </div>
+    <div class="container">
+        <div id="main"></div>
+    </div>
+    <div class="container">
+        <div id="help">
+            <h1 class="text-center">Help menu</h1>
+            <p>In this to-do list app, you add a task in the input field, press Enter on your keyboard, or on the "OK" button next to the input field. To remove a task from the list, you can click on said task. If you want to remove every task from the list, type in /clear and press enter or press the "OK" button.</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
