@@ -1,0 +1,48 @@
+body {
+    font-family: font;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    padding: 0.5rem;
+    background-color: silver;
+    min-width: 15rem;
+    text-align: center;
+}
+
+.title { font-size: xx-large; }
+
+hr { border-color: silver; }
+
+#roulette-text-1 { color: blue; }
+#roulette-text-2 { color: red; }
+
+button {
+    background-color: gray;
+    box-shadow: 4px 4px dimgray;
+    border: none;
+    font-family: font;
+    cursor: pointer;
+    outline-offset: -3px;
+    outline-width: 2px;
+    outline-style: dotted;
+    outline-color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+button:hover {
+    position: relative;
+    top: -2px;
+}
