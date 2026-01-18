@@ -77,3 +77,17 @@ setInterval(function() {
     localStorage.setItem("time", time);
     document.getElementById("time").innerHTML = localStorage.getItem("time");
 }, 1000);
+
+
+let logins = localStorage.getItem("logins");
+
+logins++;
+
+localStorage.setItem("logins", logins);
+
+document.getElementById("logins").innerHTML = logins;
+
+let newLogins = parseInt(localStorage.getItem("logins"));
+if (!isNaN(newNeocoin)) {
+  neocoin = newNeocoin;
+}
