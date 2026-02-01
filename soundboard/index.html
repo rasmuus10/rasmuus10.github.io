@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">Sound<span class="blue">board</span></h1>
-    <div class="buttonHolder">
+    <fieldset class="buttonHolder">
+        <legend><span>Sound</span><span class="blue">Board</span></legend>
         <button onclick="play('tada')">Tada</button>
         <button onclick="play('meow')">Meow</button>
         <button onclick="play('e')">E</button>
@@ -22,7 +22,7 @@
         <button onclick="play('no')">No</button>
         <button onclick="play('burp')">Burp</button>
         <br><a href="../"><button id="homepage">HOME PAGE</button></a>
-    </div>
+    </fieldset>
     <audio id="tada" src="sounds/tada.mp3"></audio>
     <audio id="meow" src="sounds/meow.mp3"></audio>
     <audio id="e" src="sounds/e.mp3"></audio>
