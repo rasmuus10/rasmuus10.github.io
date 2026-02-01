@@ -1,10 +1,15 @@
 html, body {
     background-color: black;
-    color: magenta;
+    color: white;
     margin: 0;
     box-sizing: border-box;
     flex-grow: 0;
     font-family: fixedsys;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 #website {
@@ -81,10 +86,14 @@ html, body {
 }
 
 #chat {
-    border: 4px double magenta;
+    border: 4px double blue;
     margin-bottom: 5px;
     scrollbar-width: 5px;
     scrollbar-color: #ff00ff;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 pre {font-family: fixedsys;}
@@ -94,6 +103,11 @@ pre {font-family: fixedsys;}
 .a:hover {
     color: black;
     background-color: cyan;
+}
+
+.other-a {
+    position: relative;
+    z-index: 1000;
 }
 
 .cyan {color: cyan;}
@@ -107,25 +121,43 @@ pre {font-family: fixedsys;}
     border-radius: 2px;
     padding-bottom: 0px;
     margin-bottom: 5px;
-    border: 4px double magenta;
+    border: 4px double blue;
     position: relative;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 #stats {
     width: 25rem;
     padding: 15px;
-    border: 4px double magenta;
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 #onlyKind {
     text-align: center;
-    color: cyan;
+    color: black;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    width: fit-content;
+    background-color: dodgerblue;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #log {
     display: none;
     background-color: black;
-    border: 4px double magenta;
+    border: 4px double blue;
     position: fixed;
     top: 0;
     left: 0;
@@ -139,24 +171,10 @@ pre {font-family: fixedsys;}
     text-align: center;
     z-index: 1000;
     overflow-y: scroll;
-}
-
-#unlistedProjects {
-    display: none;
-    background-color: black;
-    border: 4px double magenta;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-    width: 35%;
-    height: 60%;
-    text-align: center;
-    z-index: 1000;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 #titleSpan {
@@ -181,45 +199,66 @@ pre {font-family: fixedsys;}
     z-index: 100;
 }
 
-#background-music {
-    border: 4px double magenta;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .other {
-    border: 4px double magenta;
+    border: 4px double blue;
     padding: 2px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0px;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+#other-div {
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    width: fit-content;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+}
+
+fieldset {
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button {
     border: 3px double;
     background-color: black;
-    color: magenta;
+    color: dodgerblue;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button:hover {
-    background-color: magenta;
-    color: white;
-    border-color: darkmagenta;
-    top: -5px;
+    background-color: mediumaquamarine;
+    color: black;
+    border-color: blue;
+    top: -2px;
 }
 
 #pre-dude {
     color: cyan;
     font-size: larger;
     position: absolute;
-    margin-top: 7%;
-    z-index: 10;
+    margin-top: 1.5rem;
+    left: -1rem;
+    z-index: 100;
 }
 
 #pre-dude2 {
@@ -227,13 +266,9 @@ button:hover {
     font-size: larger;
     position: absolute;
     z-index: 100;
-    margin-top: 7%;
-    left: 35%;
+    margin-top: 1.5rem;
+    right: 4rem;
 }
-
-#canvas {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xoekfqZxDbkCP6TLChaSoZvhtgWCZpUfnx5rLVtwxe5VqVaqJe55gHdH-A1Fsxos8Ss&usqp=CAU");}
-
-#unlisted {cursor: pointer;}
 
 .container {
     display: flex;
@@ -255,4 +290,21 @@ button:hover {
 #stats-title {
     color: cyan;
     margin-left: 1.5rem;
+}
+
+legend {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+    text-decoration-style: dotted;
+    background-color: navy;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+hr {
+    border: 1px dotted white;
+    margin: 1px;
 }

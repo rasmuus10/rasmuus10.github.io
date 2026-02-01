@@ -4,7 +4,6 @@ html, body {
     margin: 0;
     font-family: fixedsys;
     color: white;
-    color: magenta;
 }
 
 @font-face {
@@ -31,7 +30,6 @@ html, body {
 }
 
 a {
-    font-family: fixedsys;
     color: orange;
     transition: color 0.3s;
     text-decoration: none;
@@ -40,9 +38,12 @@ a {
 a:hover { color: orangered; }
 
 #main {
-    border: 3px double;
+    border: 3px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
     background-color: black;
-    color: magenta;
     width: 18rem;
     padding: 10px;
     font-size: small;
@@ -65,18 +66,22 @@ marquee {
 button {
     border: 3px double;
     background-color: black;
-    color: magenta;
+    color: dodgerblue;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button:hover {
-    background-color: magenta;
-    color: white;
-    border-color: darkmagenta;
-    top: -5px;
+    background-color: mediumaquamarine;
+    color: black;
+    border-color: blue;
+    top: -2px;
 }
 
 #clicker {

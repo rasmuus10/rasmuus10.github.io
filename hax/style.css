@@ -1,6 +1,6 @@
 html, body {
     background-color: black;
-    color: magenta;
+    color: white;
     font-family: fixedsys;
     text-align: center;
 }
@@ -10,10 +10,7 @@ html, body {
     src: url(../fonts/FSEX300.ttf);
 }
 
-a {
-    color: cyan;
-    font-family: fixedsys;
-}
+a { color: cyan; }
 
 a:hover {
     color: black;

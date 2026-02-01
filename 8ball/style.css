@@ -1,7 +1,7 @@
 body {
     background-color: black;
     font-family: fixedsys;
-    color: magenta;
+    color: white;
     text-align: center;
 }
 
@@ -11,8 +11,20 @@ body {
 }
 
 #title {
-    font-size: 6rem;
+    font-size: x-large;
+    background-color: dimgray;
+    outline-offset: -2px;
+    outline-width: 2px;
+    outline-color: white;
+    outline-style: dotted;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset { width: fit-content; }
 
 #ballNum {color: cyan;}
 #ballText {color: cyan; width: 100rem;}
@@ -31,16 +43,20 @@ body {
 button {
     border: 3px double;
     background-color: black;
-    color: magenta;
+    color: dodgerblue;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button:hover {
-    background-color: magenta;
-    color: white;
-    border-color: darkmagenta;
-    top: -5px;
+    background-color: mediumaquamarine;
+    color: black;
+    border-color: blue;
+    top: -2px;
 }

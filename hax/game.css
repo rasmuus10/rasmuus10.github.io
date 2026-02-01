@@ -1,6 +1,6 @@
 html, body {
     background-color: black;
-    color: magenta;
+    color: white;
     font-family: fixedsys;
     text-align: center;
 }
@@ -11,28 +11,36 @@ html, body {
 }
 
 input {
-    border: 4px double magenta;
-    color: magenta;
+    border: 4px double blue;
+    color: white;
     background: none;
     outline: none;
     font-family: fixedsys;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button {
     border: 3px double;
     background-color: black;
-    color: magenta;
+    color: dodgerblue;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button:hover {
-    background-color: magenta;
-    color: white;
-    border-color: darkmagenta;
-    top: -5px;
+    background-color: mediumaquamarine;
+    color: black;
+    border-color: blue;
+    top: -2px;
 }
 
 #ball {

@@ -29,7 +29,7 @@ function call() {
         document.getElementById("ballNum").style.float = "right";
         document.getElementById("ballNum").style.marginRight = "5px";
         document.getElementById("ballNum").style.marginTop = "8px";
-        document.getElementById("ballNum").style.color = "magenta";
+        document.getElementById("ballNum").style.color = "black";
         document.getElementById("ballText").innerHTML = randomNo;
         random8 = Math.floor(Math.random() * 2);
         randomNo = no[Math.floor(Math.random() * no.length)];
@@ -38,7 +38,7 @@ function call() {
         document.getElementById("ballNum").style.float = "right";
         document.getElementById("ballNum").style.marginRight = "22px";
         document.getElementById("ballNum").style.marginTop = "8px";
-        document.getElementById("ballNum").style.color = "magenta";
+        document.getElementById("ballNum").style.color = "black";
         document.getElementById("ballText").innerHTML = randomYes;
         random8 = Math.floor(Math.random() * 2);
         randomNo = no[Math.floor(Math.random() * no.length)];

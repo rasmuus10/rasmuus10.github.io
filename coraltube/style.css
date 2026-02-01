@@ -1,7 +1,7 @@
 body {
     background-color: black;
     font-family: fixedsys;
-    color: magenta;
+    color: white;
     position: relative;
     z-index: 1;
 }
@@ -14,25 +14,35 @@ body {
 button {
     border: 3px double;
     background-color: black;
-    color: magenta;
+    color: dodgerblue;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button:hover {
-    background-color: magenta;
-    color: white;
-    border-color: darkmagenta;
-    top: -5px;
+    background-color: mediumaquamarine;
+    color: black;
+    border-color: blue;
+    top: -2px;
 }
 
 .blue {color: dodgerblue;}
 .lime {color: lime;}
 .red {color: red;}
-a {color: aqua;}
 .title {text-align: center;font-size: 2.5rem;}
+
+a { color: cyan; }
+
+a:hover {
+    color: black;
+    background-color: cyan;
+}
 
 .main {
     margin-left: auto;
@@ -40,62 +50,59 @@ a {color: aqua;}
     max-width: 50%;
     height: 40rem;
     padding: 5px;
-    border: 4px double magenta;
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
-.trending-channels {
+.trending-games, .trending-topics, .trending-channels {
     float: left;
     height: fit-content;
-    border-right: 4px double magenta;
-    border-bottom: 4px double magenta;
-    padding-bottom: 5px;
-    padding-right: 5px;
-}
-
-.trending-games {
-    float: left;
-    height: fit-content;
-    border-right: 4px double magenta;
-    border-bottom: 4px double magenta;
+    border-right: 4px double blue;
+    border-bottom: 4px double blue;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
-}
-
-.trending-topics {
-    float: left;
-    height: fit-content;
-    border-right: 4px double magenta;
-    border-bottom: 4px double magenta;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 .coraltube-news {
     float: left;
-    border-bottom: 4px double magenta;
-    border-right: 4px double magenta;
+    border-bottom: 4px double blue;
+    border-right: 4px double blue;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
     width: 25rem;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 .searchBox {
     float: left;
-    border-bottom: 4px double magenta;
-    border-right: 4px double magenta;
+    border-bottom: 4px double blue;
+    border-right: 4px double blue;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 3px;
     width: 25rem;
     height: 6rem;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 #searchBar {
     background: none;
-    border: 4px double magenta;
+    border: 4px double blue;
     outline: none;
     padding: 5px;
     margin: 5px;
@@ -103,6 +110,10 @@ a {color: aqua;}
     margin-left: 0px;
     margin-right: 0px;
     height: 1rem;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 #searchText {
@@ -126,7 +137,13 @@ img {
     cursor: pointer;
 }
 
-.video {border: 4px double magenta;}
+.video {
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
 #video2 {margin-left: 11rem;}
 #video3 {margin-left: 22rem;}
 #video4 {margin-left: 34rem;}
