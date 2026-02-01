@@ -33,9 +33,9 @@ function isCollidingX(x1, w1, x2, w2) { return x1 < x2 + w2 && x1 + w1 > x2; }
 function isCollidingY(y1, h1, y2, h2) { return y1 < y2 + h2 && y1 + h1 > y2; }
 
 function render() {
-    ctx.fillStyle = "cyan";
+    ctx.fillStyle = "aquamarine";
     ctx.fillRect(player.x, player.y, player.width, player.height);
-    ctx.fillStyle = "magenta";
+    ctx.fillStyle = "navy";
     ctx.fillRect(neocoin.x, neocoin.y, neocoin.width, neocoin.height);
 }
 

@@ -1,6 +1,6 @@
 html, body {
     background-color: black;
-    color: magenta;
+    color: white;
     font-family: fixedsys;
 }
 
@@ -15,16 +15,14 @@ html, body {
 }
 
 #main {
-    border: 4px double magenta;
+    border: 4px double blue;
     padding: 10px;
     text-align: center;
     width: 50%;
 }
 
 hr {
-    margin-right: 4px;
-    margin-left: 4px;
-    border-color: magenta;
+    border: 1px dotted white;
 }
 
 a {
@@ -49,26 +47,54 @@ a:hover {
 }
 
 .shop {
-    border: 4px double cyan;
+    border: 4px double aquamarine;
     color: cyan;
     padding: 10px;
     width: 30.5%;
     height: 15rem;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+fieldset {
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+legend {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+    text-decoration-style: dotted;
+    background-color: navy;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button {
     border: 3px double;
     background-color: black;
-    color: cyan;
+    color: dodgerblue;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button:hover {
-    background-color: cyan;
+    background-color: mediumaquamarine;
     color: black;
-    border-color: darkcyan;
-    top: -5px;
+    border-color: blue;
+    top: -2px;
 }

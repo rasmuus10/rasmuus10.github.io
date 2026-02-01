@@ -16,7 +16,7 @@ body {
 
 #display {
     background-color: black;
-    border: 4px ridge cyan;
+    border: 4px ridge blue;
     padding: 5px;
     width: fit-content;
     color: white;
@@ -26,6 +26,10 @@ body {
     left: 0;
     z-index: 1000;
     opacity: 50%;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 #display:hover { opacity: 100; }
