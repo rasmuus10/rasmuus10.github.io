@@ -84,12 +84,8 @@ button:hover {
     top: -2px;
 }
 
-#clicker {
-    position: absolute;
-    top: 25%;
-}
 
-#click {
+#clicker {
     color: white;
     border: 2px solid white;
     border-radius: 50%;
@@ -99,7 +95,30 @@ button:hover {
     cursor: pointer;
 }
 
-#dollar {
-    position: relative;
-    top: 15px;
+fieldset {
+    height: 8rem;
+    width: fit-content;
+    border: 3px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+legend {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+    text-decoration-style: dotted;
+    background-color: navy;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+hr {
+    border: 1px dotted white;
+    margin: 1px;
+    width: 17rem;
 }

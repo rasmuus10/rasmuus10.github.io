@@ -125,7 +125,7 @@ function openCase() {
   }
 }
 
-let clicker = document.getElementById("click");
+let clicker = document.getElementById("clicker");
 
 clicker.onclick = function() {
   balance += 0.25;
