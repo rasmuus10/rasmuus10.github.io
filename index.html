@@ -6,12 +6,13 @@
     <title>neocoral</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zodacss.css">
 </head>
 <body translate="no">
     <!-- 
-    
-    fixa admin page
-    fixa alla sidors tema så de passa index
+
+    ; -*- att göra -*- ;
+
     
     -->
     <div id="website">
@@ -131,6 +132,15 @@
                 <span onclick="play('theburningofatlanta')" class="jukebox-text">whiplash - the burning of atlanta</span>
             </fieldset>
         </div>
+        <div class="container">
+            <div id="stats">
+                <span id="stats-title"><i>stats</i></span><br>
+                neocoins: <span id="neocoins">error</span><br>
+                stonks: <span id="stonk">error</span><br>
+                time spent: <span id="time">error</span>s<br>
+                logins: <span id="logins">error</span>
+            </div>
+        </div>
 
         <audio id="holywars" src="music/holywars.mp3" loop></audio>
         <audio id="rainingblood" src="music/rainingblood.mp3" loop></audio>
@@ -147,6 +157,10 @@
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v6.9</h2>
+            <p>Moved <i class="cyan">stats</i> tab under the jukebox</p>
+            <h2>v6.8</h2>
+            <p>Changes format for notes in <a href="piano/" class="a">disasterpiece piano</a> from <span class="aquamarine">.wav</span> to <span class="aquamarine">.mp3</span></p>
             <h2>v6.7</h2>
             <p>Added jukebox, and 11 songs with it</p>
             <h2>v6.6</h2>
@@ -270,15 +284,6 @@
                 <p id="onlyKind">» only kind messages allowed «</p>
             </div>
             <div class="container"><iframe src="https://www5.cbox.ws/box/?boxid=955618&boxtag=D0mwrt" id="chat" width="750" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
-            <div class="container">
-                <div id="stats">
-                    <span id="stats-title"><i>stats</i></span><br>
-                    neocoins: <span id="neocoins">error</span><br>
-                    stonks: <span id="stonk">error</span><br>
-                    time spent: <span id="time">error</span>s<br>
-                    logins: <span id="logins">error</span>
-                </div>
-            </div>
         </div>
     </div>
     <script src="index.js"></script>

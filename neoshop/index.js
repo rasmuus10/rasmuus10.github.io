@@ -24,21 +24,6 @@ howToInstallArchTxt.onclick = function() {
     }
 }
 
-const templeosiso = document.getElementById("templeos.iso");
-
-templeosiso.onclick = function() {
-    if(neocoin < 6500) {
-        alert("not enough money");
-        return;
-    } else {
-        neocoin -= 6500;
-        localStorage.setItem("neocoin", neocoin);
-        neocoinsText.textContent = localStorage.getItem("neocoin");
-
-        download("https://raw.githubusercontent.com/zodajam/neocoral-downloads/main/tech/templeos.iso", "templeos.iso");
-    }
-}
-
 const song1 = document.getElementById("song1");
 
 song1.onclick = function() {
@@ -50,7 +35,7 @@ song1.onclick = function() {
         localStorage.setItem("neocoin", neocoin);
         neocoinsText.textContent = localStorage.getItem("neocoin");
 
-        download("https://raw.githubusercontent.com/zodajam/neocoral-downloads/main/music/song1.wav", "song1.wav");
+        download("songs/song1.mp3", "song1.mp3");
     }
 }
 
@@ -65,7 +50,7 @@ song2.onclick = function() {
         localStorage.setItem("neocoin", neocoin);
         neocoinsText.textContent = localStorage.getItem("neocoin");
 
-        download("https://raw.githubusercontent.com/zodajam/neocoral-downloads/main/music/song2.wav", "song2.wav");
+        download("songs/song2.mp3", "song2.mp3");
     }
 }
 
