@@ -7,15 +7,6 @@ document.getElementById("changelog").onclick = function() { // open changelog
     }
 }
 
-document.getElementById("unlistedProjectsBtn").onclick = function() {
-    on('unlistedProjects');
-    on('cover');
-    document.getElementById('cover').onclick = function() {
-        off('unlistedProjects');
-        off('cover');
-    }
-}
-
 function on(id) { document.getElementById(id).style.display = "block"; } // show stuff
 function off(id) { document.getElementById(id).style.display = "none"; } // hide stuff
 
@@ -33,37 +24,6 @@ if (isMobile()) { // js mobile optimization :sob:
    document.getElementById("log").style.width = "fit-content";
    document.getElementById("unlistedProjects").style.width = "fit-content";
 }
-
-const canvas = document.getElementById("background");
-const ctx = canvas.getContext("2d");
-
-ctx.lineWidth = 15;
-
-let r = 255;
-let g = 0;
-let b = 180;
-
-document.addEventListener("mousemove", function(event) {
-    ctx.beginPath();
-    ctx.moveTo(event.x, event.y);
-    ctx.lineTo(event.x + 10, event.y + 10);
-    ctx.stroke();
-
-    setTimeout(function() {
-        ctx.clearRect(event.x - 10, event.y - 10, 30, 30);
-        ctx.strokeStyle = `rgb(${r},${g},${b})`;
-
-        r--;
-        g++;
-        b++;
-
-        if(r < 0 && g > 255 & b > 255) {
-            r = 255;
-            g = 0;
-            b = 180;
-        }
-    }, 1);
-});
 
 document.getElementById("neocoins").innerHTML = localStorage.getItem("neocoin");
 document.getElementById("stonk").innerHTML = localStorage.getItem("stonk");
@@ -90,4 +50,56 @@ document.getElementById("logins").innerHTML = logins;
 let newLogins = parseInt(localStorage.getItem("logins"));
 if (!isNaN(newNeocoin)) {
   neocoin = newNeocoin;
+}
+
+function play(id) {
+    let audio = document.getElementById(id);
+    audio.play();
+}
+
+function muteAudio() {
+    let audio1 = document.getElementById("holywars");
+    let audio2 = document.getElementById("rainingblood");
+    let audio3 = document.getElementById("warismyshepherd");
+    let audio4 = document.getElementById("blacklist");
+    let audio5 = document.getElementById("hangar18");
+    let audio6 = document.getElementById("poisonwasthecure");
+    let audio7 = document.getElementById("theburningofatlanta");
+    let audio8 = document.getElementById("angelofdeath");
+    let audio9 = document.getElementById("strikeofthebeast");
+    let audio10 = document.getElementById("fivemagics");
+    let audio11 = document.getElementById("thetoxicwaltz");
+
+    audio1.pause();
+    audio1.currentTime = 0;
+
+    audio2.pause();
+    audio2.currentTime = 0;
+
+    audio3.pause();
+    audio3.currentTime = 0;
+
+    audio4.pause();
+    audio4.currentTime = 0;
+
+    audio5.pause();
+    audio5.currentTime = 0;
+
+    audio6.pause();
+    audio6.currentTime = 0;
+
+    audio7.pause();
+    audio7.currentTime = 0;
+
+    audio8.pause();
+    audio8.currentTime = 0;
+
+    audio9.pause();
+    audio9.currentTime = 0;
+
+    audio10.pause();
+    audio10.currentTime = 0;
+
+    audio11.pause();
+    audio11.currentTime = 0;
 }

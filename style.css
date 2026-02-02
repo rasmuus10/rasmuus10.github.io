@@ -310,3 +310,26 @@ hr {
 }
 
 #favicon-changelog { width: 25px; }
+
+#jukebox {
+    position: relative;
+    width: fit-content;
+    left: 25rem;
+    top: -30rem;
+    text-align: center;
+}
+
+.jukebox-text {
+    color: cyan;
+    cursor: pointer;
+}
+
+.jukebox-text:hover {
+    background-color: cyan;
+    color: black;
+}
+
+#bottom-page {
+    position: relative;
+    top: -15rem;
+}

@@ -114,9 +114,41 @@
                 </fieldset>
             </fieldset>
         </main>
+        <div class="center">
+            <fieldset id="jukebox">
+                <legend>jukebox</legend>
+                <button onclick="muteAudio()">stop music</button><br>
+                <span onclick="play('holywars')" class="jukebox-text">megadeth - holy wars</span><br>
+                <span onclick="play('hangar18')" class="jukebox-text">megadeth - hangar 18</span><br>
+                <span onclick="play('poisonwasthecure')" class="jukebox-text">megadeth - poison was the cure</span><br>
+                <span onclick="play('fivemagics')" class="jukebox-text">megadeth - five magics</span><br>
+                <span onclick="play('rainingblood')" class="jukebox-text">slayer - raining blood</span><br>
+                <span onclick="play('angelofdeath')" class="jukebox-text">slayer - angel of death</span><br>
+                <span onclick="play('warismyshepherd')" class="jukebox-text">exodus - war is my shepherd</span><br>
+                <span onclick="play('blacklist')" class="jukebox-text">exodus - blacklist</span><br>
+                <span onclick="play('thetoxicwaltz')" class="jukebox-text">exodus - the toxic waltz</span><br>
+                <span onclick="play('strikeofthebeast')" class="jukebox-text">exodus - strike of the beast</span><br>
+                <span onclick="play('theburningofatlanta')" class="jukebox-text">whiplash - the burning of atlanta</span>
+            </fieldset>
+        </div>
+
+        <audio id="holywars" src="music/holywars.mp3" loop></audio>
+        <audio id="rainingblood" src="music/rainingblood.mp3" loop></audio>
+        <audio id="warismyshepherd" src="music/warismyshepherd.mp3" loop></audio>
+        <audio id="blacklist" src="music/blacklist.mp3" loop></audio>
+        <audio id="hangar18" src="music/hangar18.mp3" loop></audio>
+        <audio id="poisonwasthecure" src="music/poisonwasthecure.mp3" loop></audio>
+        <audio id="theburningofatlanta" src="music/theburningofatlanta.mp3" loop></audio>
+        <audio id="angelofdeath" src="music/angelofdeath.mp3" loop></audio>
+        <audio id="strikeofthebeast" src="music/strikeofthebeast.mp3" loop></audio>
+        <audio id="thetoxicwaltz" src="music/thetoxicwaltz.mp3" loop></audio>
+        <audio id="fivemagics" src="music/fivemagics.mp3" loop></audio>
+
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v6.7</h2>
+            <p>Added jukebox, and 11 songs with it</p>
             <h2>v6.6</h2>
             <p>Minor update to <a href="park2/" class="a">park2</a></p>
             <h2>v6.5</h2>
@@ -233,17 +265,19 @@
             <p>The site is officialy launched on <a href="https://github.com/rasmuus10" target="_blank" class="a">GitHub</a> by zodajam.</p>
         </div>
         <div id="cover"></div>
-        <div class="center">
-            <p id="onlyKind">» only kind messages allowed «</p>
-        </div>
-        <div class="container"><iframe src="https://www5.cbox.ws/box/?boxid=955618&boxtag=D0mwrt" id="chat" width="750" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
-        <div class="container">
-            <div id="stats">
-                <span id="stats-title"><i>stats</i></span><br>
-                neocoins: <span id="neocoins">error</span><br>
-                stonks: <span id="stonk">error</span><br>
-                time spent: <span id="time">error</span>s<br>
-                logins: <span id="logins">error</span>
+        <div id="bottom-page">
+            <div class="center">
+                <p id="onlyKind">» only kind messages allowed «</p>
+            </div>
+            <div class="container"><iframe src="https://www5.cbox.ws/box/?boxid=955618&boxtag=D0mwrt" id="chat" width="750" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
+            <div class="container">
+                <div id="stats">
+                    <span id="stats-title"><i>stats</i></span><br>
+                    neocoins: <span id="neocoins">error</span><br>
+                    stonks: <span id="stonk">error</span><br>
+                    time spent: <span id="time">error</span>s<br>
+                    logins: <span id="logins">error</span>
+                </div>
             </div>
         </div>
     </div>
