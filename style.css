@@ -127,20 +127,7 @@ pre {font-family: fixedsys;}
     outline-color: white;
     outline-style: dotted;
     outline-width: 1px;
-}
-
-#stats {
-    width: fit-content;
-    padding: 15px;
-    border: 4px double blue;
-    outline-offset: -4px;
-    outline-color: white;
-    outline-style: dotted;
-    outline-width: 1px;
-    position: relative;
-    left: 25rem;
-    top: -29rem;
-
+    z-index: 10;
 }
 
 #onlyKind {
@@ -321,19 +308,60 @@ hr {
     left: 25rem;
     top: -30rem;
     text-align: center;
+    z-index: 10;
 }
 
-.jukebox-text {
+.panel-text {
     color: cyan;
     cursor: pointer;
 }
 
-.jukebox-text:hover {
+.panel-text:hover {
     background-color: cyan;
     color: black;
 }
 
 #bottom-page {
     position: relative;
-    top: -22rem;
+    top: -34rem;
+    z-index: 10;
+}
+
+#stats {
+    width: fit-content;
+    padding: 15px;
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    position: relative;
+    left: 29rem;
+    top: -29rem;
+    z-index: 10;
+
+}
+
+#contact {
+    position: relative;
+    width: fit-content;
+    left: 20rem;
+    top: -36rem;
+    text-align: center;
+    z-index: 10;
+}
+
+#canvas {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#control-panel {
+    position: relative;
+    left: -21rem;
+    top: -57rem;
+    z-index: 10;
+    text-align: center;
 }

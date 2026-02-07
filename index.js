@@ -48,8 +48,8 @@ localStorage.setItem("logins", logins);
 document.getElementById("logins").innerHTML = logins;
 
 let newLogins = parseInt(localStorage.getItem("logins"));
-if (!isNaN(newNeocoin)) {
-  neocoin = newNeocoin;
+if (!isNaN(newLogins)) {
+  logins = newLogins;
 }
 
 function play(id) {
@@ -103,3 +103,52 @@ function muteAudio() {
     audio11.pause();
     audio11.currentTime = 0;
 }
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let y = 0;
+
+const colors = [
+    "blue",
+    "cyan",
+    "mediumaquamarine"
+];
+
+let size = Math.floor(Math.random() * 8) + 4;
+
+let matrixInterval;
+
+function matrix() {
+    matrixInterval = setInterval(function() {
+        y++;
+        size = Math.floor(Math.random() * 8) + 4;
+        ctx.fillRect(Math.floor(Math.random () * 2500), y, size, size);
+        ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+    }, 50);
+}
+
+let r = Math.floor(Math.random() * 255);
+let g = Math.floor(Math.random() * 255);
+let b = Math.floor(Math.random() * 255);
+
+function enableHell() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    document.addEventListener("mousemove", (event) => {
+        r = Math.floor(Math.random() * 255) + 1;
+        g = Math.floor(Math.random() * 255) + 1;
+        b = Math.floor(Math.random() * 255) + 1;
+
+        ctx.strokeStyle = `rgb(${r},${g},${b})`;
+
+        ctx.moveTo(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height));
+        ctx.lineTo(event.x, event.y, Math.floor(Math.random() * 16) + 1, Math.floor(Math.random() * 16) + 1);
+        ctx.stroke();
+    });
+}
+
+function clearCanvas() { location.reload(); }

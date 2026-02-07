@@ -119,27 +119,47 @@
             <fieldset id="jukebox">
                 <legend>jukebox</legend>
                 <button onclick="muteAudio()">stop music</button><br>
-                <span onclick="play('holywars')" class="jukebox-text">megadeth - holy wars</span><br>
-                <span onclick="play('hangar18')" class="jukebox-text">megadeth - hangar 18</span><br>
-                <span onclick="play('poisonwasthecure')" class="jukebox-text">megadeth - poison was the cure</span><br>
-                <span onclick="play('fivemagics')" class="jukebox-text">megadeth - five magics</span><br>
-                <span onclick="play('rainingblood')" class="jukebox-text">slayer - raining blood</span><br>
-                <span onclick="play('angelofdeath')" class="jukebox-text">slayer - angel of death</span><br>
-                <span onclick="play('warismyshepherd')" class="jukebox-text">exodus - war is my shepherd</span><br>
-                <span onclick="play('blacklist')" class="jukebox-text">exodus - blacklist</span><br>
-                <span onclick="play('thetoxicwaltz')" class="jukebox-text">exodus - the toxic waltz</span><br>
-                <span onclick="play('strikeofthebeast')" class="jukebox-text">exodus - strike of the beast</span><br>
-                <span onclick="play('theburningofatlanta')" class="jukebox-text">whiplash - the burning of atlanta</span>
+                <span onclick="play('holywars')" class="panel-text">megadeth - holy wars</span><br>
+                <span onclick="play('hangar18')" class="panel-text">megadeth - hangar 18</span><br>
+                <span onclick="play('poisonwasthecure')" class="panel-text">megadeth - poison was the cure</span><br>
+                <span onclick="play('fivemagics')" class="panel-text">megadeth - five magics</span><br>
+                <span onclick="play('rainingblood')" class="panel-text">slayer - raining blood</span><br>
+                <span onclick="play('angelofdeath')" class="panel-text">slayer - angel of death</span><br>
+                <span onclick="play('warismyshepherd')" class="panel-text">exodus - war is my shepherd</span><br>
+                <span onclick="play('blacklist')" class="panel-text">exodus - blacklist</span><br>
+                <span onclick="play('thetoxicwaltz')" class="panel-text">exodus - the toxic waltz</span><br>
+                <span onclick="play('strikeofthebeast')" class="panel-text">exodus - strike of the beast</span><br>
+                <span onclick="play('theburningofatlanta')" class="panel-text">whiplash - the burning of atlanta</span>
             </fieldset>
         </div>
         <div class="container">
-            <div id="stats">
-                <span id="stats-title"><i>stats</i></span><br>
+            <fieldset id="stats">
+                <legend class="text-center">stats</legend>
                 neocoins: <span id="neocoins">error</span><br>
                 stonks: <span id="stonk">error</span><br>
                 time spent: <span id="time">error</span>s<br>
                 logins: <span id="logins">error</span>
-            </div>
+            </fieldset>
+        </div>
+
+        <div class="container">
+            <fieldset id="contact">
+                <legend>contact</legend>
+                <span class="panel-text" onclick="alert('rasmuslarvia@proton.me')">email</span><br>
+                <span class="panel-text" onclick="alert('rasmuus10')">discord</span><br>
+                <span class="panel-text" onclick="location.href='https://github.com/rasmuus10'">github</span><br>
+            </fieldset>
+        </div>
+
+        <div class="container">
+            <fieldset id="control-panel">
+                <legend>control panel</legend>
+                <span class="panel-text" onclick="matrix()">enable matrix rain</span><br>
+                <span class="panel-text" onclick="clearInterval(matrixInterval);">disable matrix rain</span><br>
+                <span class="panel-text" onclick="clearCanvas()">clear canvas</span><br>
+                <span class="panel-text" onclick="enableHell()">enable hell</span><br>
+                <span class="panel-text" onclick="clearCanvas()">disable hell</span><br>
+            </fieldset>
         </div>
 
         <audio id="holywars" src="music/holywars.mp3" loop></audio>
@@ -157,6 +177,8 @@
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v7.0</h2>
+            <p>Added contact box on right side, and added control panel on the left side. Also made <i class="cyan">stats</i> into fieldset</p>
             <h2>v6.9</h2>
             <p>Moved <i class="cyan">stats</i> tab under the jukebox</p>
             <h2>v6.8</h2>
@@ -278,6 +300,7 @@
             <h2>v1.0</h2>
             <p>The site is officialy launched on <a href="https://github.com/rasmuus10" target="_blank" class="a">GitHub</a> by zodajam.</p>
         </div>
+        <canvas id="canvas"></canvas>
         <div id="cover"></div>
         <div id="bottom-page">
             <div class="center">
