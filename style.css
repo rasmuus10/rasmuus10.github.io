@@ -98,7 +98,10 @@ html, body {
 
 pre {font-family: fixedsys;}
 
-.a { color: cyan; }
+.a {
+    color: cyan;
+    text-decoration: none;
+}
 
 .a:hover {
     color: black;
@@ -268,15 +271,13 @@ button:hover {
 }
 
 .special-btn {
-    background: none;
-    border: 4px double cyan;
-    color: cyan;
+    background: darkslateblue;
+    border: 4px double royalblue;
 }
 
 .special-btn:hover {
-    border-color: darkcyan;
-    background-color: cyan;
-    color: black;
+    border-color: cornflowerblue;
+    background-color: mediumslateblue;
 }
 
 #stats-title {
