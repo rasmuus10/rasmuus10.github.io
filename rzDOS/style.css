@@ -44,22 +44,26 @@ pre { font-family: fixedsys; }
 }
 
 button {
-    border: 3px double;
-    background-color: black;
-    color: cyan;
+    border: 3px double dodgerblue;
+    background-color: navy;
+    color: white;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    box-shadow: 2px 2px darkslateblue;
 }
 
 button:hover {
-    background-color: cyan;
-    color: black;
-    border-color: darkcyan;
-    top: -5px;
+    background-color: dodgerblue;
+    color: white;
+    border-color: blue;
+    top: -2px;
 }
-
 .appBtn { height: 2rem; }
 
 #watermarkTop {float: right;}

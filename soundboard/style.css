@@ -12,9 +12,9 @@ body {
 }
 
 button {
-    border: 3px double;
-    background-color: black;
-    color: dodgerblue;
+    border: 3px double dodgerblue;
+    background-color: navy;
+    color: white;
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
@@ -23,11 +23,12 @@ button {
     outline-color: white;
     outline-style: dotted;
     outline-width: 1px;
+    box-shadow: 2px 2px darkslateblue;
 }
 
 button:hover {
-    background-color: mediumaquamarine;
-    color: black;
+    background-color: dodgerblue;
+    color: white;
     border-color: blue;
     top: -2px;
 }
