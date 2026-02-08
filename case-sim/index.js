@@ -76,7 +76,7 @@ function openCase() {
     plusMoneyText.style.color = "blue";
     plusMoneyText.textContent = "+$0.25";
     skinType = "blue";
-    balance += 0.25;
+    balance += 1;
     balText.textContent = balance;
     let randomBlue = blues[Math.floor(Math.random() * blues.length)];
     dropText.style.color = "blue";
@@ -89,7 +89,7 @@ function openCase() {
     plusMoneyText.style.color = "#5600c4";
     plusMoneyText.textContent = "+$1";
     skinType = "purple";
-    balance += 1;
+    balance += 3;
     balText.textContent = balance;
     let randomPurple = purples[Math.floor(Math.random() * purples.length)];
     dropText.style.color = "#5600c4";
