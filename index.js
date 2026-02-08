@@ -69,6 +69,7 @@ function muteAudio() {
     let audio9 = document.getElementById("strikeofthebeast");
     let audio10 = document.getElementById("fivemagics");
     let audio11 = document.getElementById("thetoxicwaltz");
+    let audio12 = document.getElementById("respectthedead");
 
     audio1.pause();
     audio1.currentTime = 0;
@@ -102,6 +103,9 @@ function muteAudio() {
 
     audio11.pause();
     audio11.currentTime = 0;
+
+    audio12.pause();
+    audio12.currentTime = 0;
 }
 
 const canvas = document.getElementById("canvas");
@@ -152,3 +156,36 @@ function enableHell() {
 }
 
 function clearCanvas() { location.reload(); }
+
+const bot_colors = [
+    "blue",
+    "cyan",
+    "mediumaquamarine"
+]
+
+let bot_x = Math.floor(Math.random() * canvas.width);
+let bot_y = Math.floor(Math.random() * canvas.height);
+
+let speed = 12;
+
+function enableCompanion() {
+    ctx.clearRect(bot_x, bot_y, 50, 50);
+    let randomNum = Math.floor(Math.random() * 100);
+
+    if(randomNum < 25) { bot_x += speed; }
+    if(randomNum < 50 && randomNum > 25) { bot_x -= speed; }
+    if(randomNum < 75 && randomNum > 50) { bot_y += speed; }
+    if(randomNum < 100 && randomNum > 75) { bot_y -= speed; }
+
+    if(bot_x < 0) { bot_x += speed; }
+    if(bot_x > canvas.width - 50) { bot_x -= speed; }
+    if(bot_y < 0) { bot_y += speed; }
+    if(bot_y > canvas.height - 50) { bot_y -= speed; }
+
+    ctx.fillStyle = bot_colors[Math.floor(Math.random() * bot_colors.length)];
+    ctx.fillRect(bot_x, bot_y, 50, 50);
+    document.getElementById("companionSpeed").textContent = speed;
+    requestAnimationFrame(enableCompanion);
+}
+
+function botSpeedPlus() { speed++; }

@@ -129,7 +129,8 @@
                 <span onclick="play('blacklist')" class="panel-text">exodus - blacklist</span><br>
                 <span onclick="play('thetoxicwaltz')" class="panel-text">exodus - the toxic waltz</span><br>
                 <span onclick="play('strikeofthebeast')" class="panel-text">exodus - strike of the beast</span><br>
-                <span onclick="play('theburningofatlanta')" class="panel-text">whiplash - the burning of atlanta</span>
+                <span onclick="play('theburningofatlanta')" class="panel-text">whiplash - the burning of atlanta</span><br>
+                <span onclick="play('respectthedead')" class="panel-text">whiplash - respect the dead</span><br>
             </fieldset>
         </div>
         <div class="container">
@@ -159,6 +160,12 @@
                 <span class="panel-text" onclick="clearCanvas()">clear canvas</span><br>
                 <span class="panel-text" onclick="enableHell()">enable hell</span><br>
                 <span class="panel-text" onclick="clearCanvas()">disable hell</span><br>
+                <span class="panel-text" onclick="enableCompanion()">enable companion</span><br>
+                <span class="panel-text" onclick="clearCanvas()">disable companion</span><br>
+                <span class="panel-text" onclick="speed++;">++ companion speed</span><br>
+                <span class="panel-text" onclick="speed--;">-- companion speed</span><br>
+                <span>companion speed: </span>
+                <span id="companionSpeed">0</span>
             </fieldset>
         </div>
 
@@ -173,10 +180,13 @@
         <audio id="strikeofthebeast" src="music/strikeofthebeast.mp3" loop></audio>
         <audio id="thetoxicwaltz" src="music/thetoxicwaltz.mp3" loop></audio>
         <audio id="fivemagics" src="music/fivemagics.mp3" loop></audio>
+        <audio id="respectthedead" src="music/respectthedead.mp3" loop></audio>
 
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v7.2</h2>
+            <p>Added companion in control panel. Also added new song to jukebox</p>
             <h2>v7.1</h2>
             <p>Changed <a href="case-sim/" class="a">CASE-SIM</a> so you gamble with your neocoins instead of money with no use. Also changed drops in <a href="case-sim/" class="a">CASE-SIM</a></p>
             <h2>v7.0</h2>
