@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino</title>
+    <title>CASE SIM</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../zodacss.css">
 </head>
 <body>
-    <center>
-        <main>
-            <div id="main">
-                <span class="text-20">Welcome to the casino</span><br>
-                <span class="text-10">99.9% of gamblers quit before they win big</span>
-                <pre>O<br>/|\<br>/ \</pre>
-                <span class="text-13">You will pay $10 every game<br>It is a 33% chance to win<br><br>
-                <span>Balance: $</span><span id="money"></span><br>
-                <button id="btn">PLAY</button><br>
-                <button id="freeMoneyBtn" onclick="claimFreeMoney()">FREE $100</button><br><br>
-            </div>
-        </main>
-    </center>
-    <script src="script.js"></script>
+    <div class="container2">
+        <nav id="topNav">
+            <b>Balance: $<span id="balance">100</span></b><br>
+            <b id="plusMoney"></b>
+        </nav>
+    </div>
+    <div id="mainHolder">
+        <button onclick="openCase()" id="openCaseBtn" class="button"><b>CASE ($5)</b></button><br><br>
+    </div>
+    <div class="container">
+        <div id="main">
+            you got:
+            <h2 id="drop"></h2>
+        </div>
+    </div>
+    <div class="container"><hr></div>
+    <marquee scrollamount="12">
+        <p>99.9% of gamblers quit before they win big!</p>
+    </marquee>
+    <marquee>
+        <span>NOTE: you are gambling with your neocoins</span>
+    </marquee>
+    <b id="redeemCode">Click here to redeem reward codes</b>
+    <script src="index.js"></script>
 </body>
 </html>
