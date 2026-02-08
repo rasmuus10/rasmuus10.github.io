@@ -135,7 +135,6 @@ pre {font-family: fixedsys;}
 
 #onlyKind {
     text-align: center;
-    color: black;
     outline-offset: -4px;
     outline-color: white;
     outline-style: dotted;
@@ -325,7 +324,7 @@ hr {
 
 #bottom-page {
     position: relative;
-    top: -40rem;
+    top: -44rem;
     z-index: 10;
 }
 

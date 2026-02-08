@@ -27,7 +27,7 @@ hr {
 
 a {
     color: cyan;
-    font-family: fixedsys;
+    text-decoration: none;
 }
 
 a:hover {
