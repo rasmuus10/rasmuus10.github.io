@@ -74,7 +74,7 @@ function openCase() {
 
   if(randomNum < 69) { // 69% chance
     plusMoneyText.style.color = "blue";
-    plusMoneyText.textContent = "+$0.25";
+    plusMoneyText.textContent = "+$1";
     skinType = "blue";
     balance += 1;
     balText.textContent = balance;
@@ -87,7 +87,7 @@ function openCase() {
 
   if(randomNum < 87) { // 18% chance
     plusMoneyText.style.color = "#5600c4";
-    plusMoneyText.textContent = "+$1";
+    plusMoneyText.textContent = "+$3";
     skinType = "purple";
     balance += 3;
     balText.textContent = balance;
