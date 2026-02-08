@@ -7,6 +7,29 @@ document.getElementById("changelog").onclick = function() { // open changelog
     }
 }
 
+const bgInput = document.getElementById("bg-input");
+
+const rainbow = [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "indigo"
+];
+
+bgInput.addEventListener("keydown", (event) => {
+    if(event.key == "Enter") {
+        if(bgInput.value.toLowerCase() == "rainbow") {
+            setInterval(function () {
+                document.body.style.backgroundColor = rainbow[Math.floor(Math.random() * rainbow.length)];
+            }, 50);
+        }
+        document.body.style.backgroundColor = bgInput.value;
+    }
+});
+
+
 function on(id) { document.getElementById(id).style.display = "block"; } // show stuff
 function off(id) { document.getElementById(id).style.display = "none"; } // hide stuff
 

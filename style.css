@@ -360,8 +360,18 @@ hr {
 
 #control-panel {
     position: relative;
-    left: -21rem;
+    left: -22rem;
     top: -57rem;
     z-index: 10;
+    text-align: center;
+}
+
+#bg-input {
+    background-color: navy;
+    border: none;
+    color: white;
+    font-family: fixedsys;
+    outline: none;
+    width: 7rem;
     text-align: center;
 }
