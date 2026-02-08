@@ -4,35 +4,47 @@ const dropText = document.getElementById("drop");
 
 const blues = [
   // all blue skins
-  "Rotten Carrot",
-  "Soggy Banana",
-  "Smashed Watermelon",
+  "the homeless guy behind the liquor store",
+  "shaved racoon",
+  "empty axe body spray bottle",
 ];
 
 const purples = [
   // all purple skins
-  "Small Pumpkin",
-  "Regular Banana",
-  "Smashed Blueberry",
+  "half used lighter",
+  "stray cat",
+  "acoustic guitar",
 ];
 
 const pinks = [
   // all pink skins
-  "Banana Gun",
-  "Regular Blueberry",
-  "Small Coconut",
+  "suspicious usb stick",
+  "2.5kg iron plate for a home gym",
+  "dave mustaine's hair",
 ];
 
-const reds = ["Large pumpkin", "Regular Coconut"];
+const reds = [
+  // all red skins
+  "$20 dollar bill",
+  "screen protector",
+  "blanket with purple stars"
+];
 
 const golds = [
   // all golds
-  "Golden Banana",
-  "Holy Blueberry",
-  "Humongous Coconut",
+  "iphone 5c",
+  "bag of 'salt'",
+  "bass amplifier",
 ];
 
-let balance = 100;
+let balance = 0;
+
+let newBalance = parseInt(localStorage.getItem("neocoin"));
+if (!isNaN(newBalance)) {
+  balance = newBalance;
+}
+
+balText.textContent = localStorage.getItem("neocoin");
 
 function openCase() {
   // Make the balance into a float so balance does not concatenate the number to the string
@@ -53,7 +65,8 @@ function openCase() {
   }
 
   balance -= 5;
-  balText.textContent = balance;
+  localStorage.setItem("neocoin", balance);
+  balText.textContent = localStorage.getItem("neocoin");
 
   let randomNum = Math.floor(Math.random() * 100);
   let skinType;
@@ -125,15 +138,6 @@ function openCase() {
   }
 }
 
-let clicker = document.getElementById("clicker");
-
-clicker.onclick = function() {
-  balance += 0.25;
-  balText.textContent = balance;
-};
-
-
-
 // redeem code
 
 const redeemCode = document.getElementById("redeemCode");
@@ -143,6 +147,7 @@ redeemCode.onclick = function() {
 
   if(code === "1.2.5") {
     balance += 1250;
+    localStorage.setItem("neocoin", balance);
     balText.textContent = balance;
   } else { 
     alert("Not a code!");
