@@ -324,7 +324,7 @@ hr {
 
 #bottom-page {
     position: relative;
-    top: -44rem;
+    top: -46rem;
     z-index: 10;
 }
 
@@ -362,7 +362,7 @@ hr {
 #control-panel {
     position: relative;
     left: -22rem;
-    top: -57rem;
+    top: -61rem;
     z-index: 10;
     text-align: center;
 }

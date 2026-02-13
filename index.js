@@ -75,60 +75,35 @@ if (!isNaN(newLogins)) {
   logins = newLogins;
 }
 
-function play(id) {
-    let audio = document.getElementById(id);
-    audio.play();
-}
+const songs = [
+    "holywars",
+    "rainingblood",
+    "warismyshepherd",
+    "blacklist",
+    "hangar18",
+    "poisonwasthecure",
+    "theburningofatlanta",
+    "angelofdeath",
+    "strikeofthebeast",
+    "fivemagics",
+    "thetoxicwaltz",
+    "respectthedead",
+    "takenoprisoners",
+    "rustinpeace",
+    "walktheplank"
+]
 
 function muteAudio() {
-    let audio1 = document.getElementById("holywars");
-    let audio2 = document.getElementById("rainingblood");
-    let audio3 = document.getElementById("warismyshepherd");
-    let audio4 = document.getElementById("blacklist");
-    let audio5 = document.getElementById("hangar18");
-    let audio6 = document.getElementById("poisonwasthecure");
-    let audio7 = document.getElementById("theburningofatlanta");
-    let audio8 = document.getElementById("angelofdeath");
-    let audio9 = document.getElementById("strikeofthebeast");
-    let audio10 = document.getElementById("fivemagics");
-    let audio11 = document.getElementById("thetoxicwaltz");
-    let audio12 = document.getElementById("respectthedead");
+    for(let i = 0; i < songs.length; i++) {
+        document.getElementById(songs[i]).pause();
+        document.getElementById(songs[i]).currentTime = 0;
+    }
+}
 
-    audio1.pause();
-    audio1.currentTime = 0;
-
-    audio2.pause();
-    audio2.currentTime = 0;
-
-    audio3.pause();
-    audio3.currentTime = 0;
-
-    audio4.pause();
-    audio4.currentTime = 0;
-
-    audio5.pause();
-    audio5.currentTime = 0;
-
-    audio6.pause();
-    audio6.currentTime = 0;
-
-    audio7.pause();
-    audio7.currentTime = 0;
-
-    audio8.pause();
-    audio8.currentTime = 0;
-
-    audio9.pause();
-    audio9.currentTime = 0;
-
-    audio10.pause();
-    audio10.currentTime = 0;
-
-    audio11.pause();
-    audio11.currentTime = 0;
-
-    audio12.pause();
-    audio12.currentTime = 0;
+function play(id) {
+    muteAudio();
+    let audio = document.getElementById(id);
+    audio.play();
 }
 
 const canvas = document.getElementById("canvas");

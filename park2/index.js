@@ -19,6 +19,8 @@ const speed = 12;
 function render() {
     ctx.fillStyle = "blue";
     ctx.fillRect(player.x, player.y, player.width, player.height);
+    ctx.font = "50px Arial";
+ctx.fillText("find the chosen block",100,80);
 }
 
 let i = 0;
@@ -28,7 +30,7 @@ let plant = new Object(Math.floor(Math.random() * canvas.width), Math.floor(Math
 const drawPlant = setInterval(function() {
     i++;
     if(i == 100) { clearInterval(drawPlant); }
-    plant = new Object(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height), 25, 25);
+    plant = new Object(Math.floor(Math.random() * canvas.width) - 100, Math.floor(Math.random() * canvas.height), 25, 25);
     ctx.fillStyle = "green";
     ctx.fillRect(plant.x, plant.y, plant.width, plant.height);
 }, 1);
@@ -63,7 +65,8 @@ function main() {
         isCollidingX(player.x, player.width, plant.x, plant.width) &&
         isCollidingY(player.y, player.height, plant.y, plant.height)
     ) {
-        alert("test");
+        alert("YOU WON!!!!!");
+        location.reload;
     }
 
     render();
