@@ -8,9 +8,9 @@ body {
 }
 
 #dice {
-    background-color: black;
-    border: 4px double navy;
-    color: cyan;
+    background-color: dodgerblue;
+    border: 8px double navy;
+    color: mediumaquamarine;
     width: 100px;
     height: 100px;
     margin-left: auto;
@@ -21,6 +21,10 @@ body {
     animation-name: dice;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
 }
 
 button {

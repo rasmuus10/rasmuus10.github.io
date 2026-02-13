@@ -120,6 +120,11 @@
             <fieldset id="jukebox">
                 <legend>jukebox</legend>
                 <button onclick="muteAudio()">stop music</button><br>
+                <i>volume:</i><br>
+                <span onclick="volume(0.25)" class="vol-btn">0.25</span>|
+                <span onclick="volume(0.50)" class="vol-btn">0.50</span>|
+                <span onclick="volume(0.75)" class="vol-btn">0.75</span>|
+                <span onclick="volume(1.0)" class="vol-btn">1.0</span><hr>
                 <span onclick="play('holywars')" class="panel-text">megadeth - holy wars</span><br>
                 <span onclick="play('hangar18')" class="panel-text">megadeth - hangar 18</span><br>
                 <span onclick="play('poisonwasthecure')" class="panel-text">megadeth - poison was the cure</span><br>
@@ -194,6 +199,8 @@
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v7.8</h2>
+            <p>Added volume for jukebox</p>
             <h2>v7.7</h2>
             <p>Changed code for muting audio and fixed issue so you can play new song without pressing stop button. And added new songs</p>
             <h2>v7.6</h2>

@@ -106,6 +106,12 @@ function play(id) {
     audio.play();
 }
 
+function volume(vol) {
+    for(let i = 0; i < songs.length; i++) {
+        document.getElementById(songs[i]).volume = vol;
+    }
+}
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 

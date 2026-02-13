@@ -362,7 +362,7 @@ hr {
 #control-panel {
     position: relative;
     left: -22rem;
-    top: -61rem;
+    top: -63rem;
     z-index: 10;
     text-align: center;
 }
@@ -375,4 +375,10 @@ hr {
     outline: none;
     width: 7rem;
     text-align: center;
+}
+
+.vol-btn:hover {
+    background-color: navy;
+    top: -2px;
+    cursor: pointer;
 }
