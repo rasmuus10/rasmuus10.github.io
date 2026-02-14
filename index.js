@@ -29,6 +29,18 @@ bgInput.addEventListener("keydown", (event) => {
     }
 });
 
+const textCinput = document.getElementById("text-color-input");
+
+textCinput.addEventListener("keydown", (event) => {
+    if(event.key == "Enter") {
+        if(textCinput.value.toLowerCase() == "rainbow") {
+            setInterval(function () {
+                document.body.style.color = rainbow[Math.floor(Math.random() * rainbow.length)];
+            }, 50);
+        }
+        document.body.style.color = textCinput.value;
+    }
+});
 
 function on(id) { document.getElementById(id).style.display = "block"; } // show stuff
 function off(id) { document.getElementById(id).style.display = "none"; } // hide stuff

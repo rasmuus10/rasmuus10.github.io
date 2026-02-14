@@ -324,7 +324,7 @@ hr {
 
 #bottom-page {
     position: relative;
-    top: -46rem;
+    top: -52rem;
     z-index: 10;
 }
 
@@ -367,7 +367,7 @@ hr {
     text-align: center;
 }
 
-#bg-input {
+.control-panel-input {
     background-color: navy;
     border: none;
     color: white;
