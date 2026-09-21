@@ -12,7 +12,7 @@ document.getElementById("main").onclick = function() { input.focus(); } // focus
 window.onload = function() { input.value = ""; }
 
 // ↓↓↓ IMPORTANT ↓↓↓
-const version = "1.3.1";
+const version = "1.3.2";
 // ↑↑↑ IMPORTANT ↑↑↑
 
 function main() { // main function
@@ -60,7 +60,7 @@ _|_|_   CPU: 12 × AMD Ryzen 5 5500
         text.innerHTML = window.Date();
     } else if(input.value === "about") { // about me and the terminal
         input.value = "";
-        text.innerHTML = "uBash is a terminal by me - zodajam.<br>I have made this terminal like 3 times in JavaScript and like 2 times in C++. It's a classic project for me and it's not that difficult.<br>The uBash version before this, now deleted, was a LOT worse since I wasn't a Linux user, so the file system was just really messed up."
+        text.innerHTML = "uBash is a terminal by me - rasmuus10.<br>I have made this terminal like 3 times in JavaScript and like 2 times in C++. It's a classic project for me and it's not that difficult.<br>The uBash version before this, now deleted, was a LOT worse since I wasn't a Linux user, so the file system was just really messed up."
     } else if(input.value === "version") { // the uBash version
         input.value = "";
         text.innerHTML = `uBash v${version}`;

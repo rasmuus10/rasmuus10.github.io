@@ -54,6 +54,49 @@ howToInstallArchTxt.onclick = function() {
     }
 }
 
+let TempleOSiso = document.getElementById("TempleOSiso");
+
+TempleOSiso.onclick = function() {
+    if(+localStorage.getItem("levels") >= 100) { discount = true; } else { discount = false; }
+    price = 250;
+    if(discount) {
+        price = price - price / 10;
+        if(neocoin < price) {
+            alert("not enough money");
+            return;
+        } else {
+            neocoin -= price;
+            localStorage.setItem("neocoin", neocoin);
+            document.getElementById("levels").textContent = localStorage.getItem("levels");
+            if(+localStorage.getItem("levels") >= 100) {
+                document.getElementById("discountHolder").style.display = "block";
+            } else {
+                document.getElementById("discountHolder").style.display = "none";
+            }
+            neocoinsText.textContent = localStorage.getItem("neocoin");
+
+            download("tech/TempleOS.iso", "TempleOS.iso");
+        }
+    } else {
+        if(neocoin < price) {
+            alert("not enough money");
+            return;
+        } else {
+            neocoin -= price;
+            localStorage.setItem("neocoin", neocoin);
+            document.getElementById("levels").textContent = localStorage.getItem("levels");
+            if(+localStorage.getItem("levels") >= 100) {
+                document.getElementById("discountHolder").style.display = "block";
+            } else {
+                document.getElementById("discountHolder").style.display = "none";
+            }
+            neocoinsText.textContent = localStorage.getItem("neocoin");
+
+            download("tech/TempleOS.iso", "TempleOS.iso");
+        }
+    }
+}
+
 const song1 = document.getElementById("song1");
 
 song1.onclick = function() {

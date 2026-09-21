@@ -154,19 +154,23 @@ let r = Math.floor(Math.random() * 255);
 let g = Math.floor(Math.random() * 255);
 let b = Math.floor(Math.random() * 255);
 
+let hellActive;
+
 function enableHell() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    hellActive = true;
 
     document.addEventListener("mousemove", (event) => {
-        r = Math.floor(Math.random() * 255) + 1;
-        g = Math.floor(Math.random() * 255) + 1;
-        b = Math.floor(Math.random() * 255) + 1;
+        if(hellActive) {
+            r = Math.floor(Math.random() * 255) + 1;
+            g = Math.floor(Math.random() * 255) + 1;
+            b = Math.floor(Math.random() * 255) + 1;
 
-        ctx.strokeStyle = `rgb(${r},${g},${b})`;
+            ctx.strokeStyle = `rgb(${r},${g},${b})`;
 
-        ctx.moveTo(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height));
-        ctx.lineTo(event.x, event.y, Math.floor(Math.random() * 16) + 1, Math.floor(Math.random() * 16) + 1);
-        ctx.stroke();
+            ctx.moveTo(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height));
+            ctx.lineTo(event.x, event.y, Math.floor(Math.random() * 16) + 1, Math.floor(Math.random() * 16) + 1);
+            ctx.stroke();
+        }
     });
 }
 
@@ -174,6 +178,7 @@ function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     clearInterval(matrixInterval);
     y = 0;
+    hellActive = false;
 }
 
 const bot_colors = [
