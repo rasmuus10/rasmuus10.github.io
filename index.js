@@ -88,20 +88,18 @@ if (!isNaN(newLogins)) {
 
 const songs = [
     "holywars",
-    "rainingblood",
-    "warismyshepherd",
-    "blacklist",
-    "hangar18",
-    "poisonwasthecure",
-    "theburningofatlanta",
-    "angelofdeath",
-    "strikeofthebeast",
     "fivemagics",
-    "thetoxicwaltz",
-    "respectthedead",
     "takenoprisoners",
-    "rustinpeace",
-    "walktheplank"
+    "fuckinghostile",
+    "mouthforwar",
+    "thislove",
+    "rise",
+    "piss",
+    "floods",
+    "10s",
+    "dragthewaters",
+    "cowboysfromhell",
+    "heresy"
 ]
 
 function muteAudio() {
@@ -117,11 +115,16 @@ function play(id) {
     audio.play();
 }
 
-function volume(vol) {
+let volSlide = document.getElementById("volSlide");
+
+function volume() {
     for(let i = 0; i < songs.length; i++) {
-        document.getElementById(songs[i]).volume = vol;
+        document.getElementById(songs[i]).volume = volSlide.value;
     }
+    document.getElementById("volCount").innerText = Math.trunc(volSlide.value * 100);
 }
+
+document.getElementById("volCount").innerText = Math.trunc(volSlide.value * 100);
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");

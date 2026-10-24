@@ -322,12 +322,6 @@ hr {
     color: black;
 }
 
-#bottom-page {
-    position: relative;
-    top: -61rem;
-    z-index: 10;
-}
-
 #stats {
     width: fit-content;
     padding: 15px;
@@ -412,9 +406,15 @@ hr {
 
 #bottom-page-small {
     position: relative;
-    top: -60rem;
+    top: -57rem;
     z-index: 10;
     width: 27rem;
+}
+
+#bottom-page {
+    position: relative;
+    top: -57rem;
+    z-index: 10;
 }
 
 #avatar {
@@ -426,4 +426,24 @@ hr {
 #editProfileText {
     font-size: smaller;
 }
+
 #bday { display: none; }
+
+#volSlide {
+    -webkit-appearance: none;
+    border-radius: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    border: 4px double blue;
+    position: relative;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    background-color: navy;
+}
+
+#volSlide:hover {
+    opacity: 1;
+    cursor: pointer;
+}

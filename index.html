@@ -127,26 +127,21 @@
             <fieldset id="jukebox">
                 <legend>jukebox</legend>
                 <button onclick="muteAudio()">stop music</button><br>
-                <i>volume:</i><br>
-                <span onclick="volume(0.25)" class="vol-btn">0.25</span>|
-                <span onclick="volume(0.50)" class="vol-btn">0.50</span>|
-                <span onclick="volume(0.75)" class="vol-btn">0.75</span>|
-                <span onclick="volume(1.0)" class="vol-btn">1.0</span><hr>
+                <i>volume: <span id="volCount"></span> %</i><br>
+                <input type="range" min="0" max="1" step="0.01" id="volSlide" onchange="volume()" class="slider"><br>
                 <span onclick="play('holywars')" class="panel-text">megadeth - holy wars</span><br>
-                <span onclick="play('hangar18')" class="panel-text">megadeth - hangar 18</span><br>
-                <span onclick="play('poisonwasthecure')" class="panel-text">megadeth - poison was the cure</span><br>
                 <span onclick="play('fivemagics')" class="panel-text">megadeth - five magics</span><br>
                 <span onclick="play('takenoprisoners')" class="panel-text">megadeth - take no prisoners</span><br>
-                <span onclick="play('rustinpeace')" class="panel-text">megadeth - rust in peace... polaris</span><br>
-                <span onclick="play('rainingblood')" class="panel-text">slayer - raining blood</span><br>
-                <span onclick="play('angelofdeath')" class="panel-text">slayer - angel of death</span><br>
-                <span onclick="play('warismyshepherd')" class="panel-text">exodus - war is my shepherd</span><br>
-                <span onclick="play('blacklist')" class="panel-text">exodus - blacklist</span><br>
-                <span onclick="play('thetoxicwaltz')" class="panel-text">exodus - the toxic waltz</span><br>
-                <span onclick="play('strikeofthebeast')" class="panel-text">exodus - strike of the beast</span><br>
-                <span onclick="play('theburningofatlanta')" class="panel-text">whiplash - the burning of atlanta</span><br>
-                <span onclick="play('respectthedead')" class="panel-text">whiplash - respect the dead</span><br>
-                <span onclick="play('walktheplank')" class="panel-text">whiplash - walk the plank</span><br>
+                <span onclick="play('fuckinghostile')" class="panel-text">pantera - fucking hostile</span><br>
+                <span onclick="play('mouthforwar')" class="panel-text">pantera - mouth for war</span><br>
+                <span onclick="play('thislove')" class="panel-text">pantera - this love</span><br>
+                <span onclick="play('rise')" class="panel-text">pantera - rise</span><br>
+                <span onclick="play('piss')" class="panel-text">pantera - piss</span><br>
+                <span onclick="play('floods')" class="panel-text">pantera - floods</span><br>
+                <span onclick="play('10s')" class="panel-text">pantera - 10's</span><br>
+                <span onclick="play('dragthewaters')" class="panel-text">pantera - drag the waters</span><br>
+                <span onclick="play('cowboysfromhell')" class="panel-text">pantera - cowboys from hell</span><br>
+                <span onclick="play('heresy')" class="panel-text">pantera - heresy</span><br>
             </fieldset>
         </div>
         <div class="container">
@@ -202,24 +197,25 @@
         </div>
 
         <audio id="holywars" src="music/holywars.mp3" loop></audio>
-        <audio id="rainingblood" src="music/rainingblood.mp3" loop></audio>
-        <audio id="warismyshepherd" src="music/warismyshepherd.mp3" loop></audio>
-        <audio id="blacklist" src="music/blacklist.mp3" loop></audio>
-        <audio id="hangar18" src="music/hangar18.mp3" loop></audio>
-        <audio id="poisonwasthecure" src="music/poisonwasthecure.mp3" loop></audio>
-        <audio id="theburningofatlanta" src="music/theburningofatlanta.mp3" loop></audio>
-        <audio id="angelofdeath" src="music/angelofdeath.mp3" loop></audio>
-        <audio id="strikeofthebeast" src="music/strikeofthebeast.mp3" loop></audio>
-        <audio id="thetoxicwaltz" src="music/thetoxicwaltz.mp3" loop></audio>
         <audio id="fivemagics" src="music/fivemagics.mp3" loop></audio>
-        <audio id="respectthedead" src="music/respectthedead.mp3" loop></audio>
         <audio id="rustinpeace" src="music/rustinpeace.mp3" loop></audio>
         <audio id="takenoprisoners" src="music/takenoprisoners.mp3" loop></audio>
-        <audio id="walktheplank" src="music/walktheplank.mp3" loop></audio>
+        <audio id="fuckinghostile" src="music/fuckinghostile.mp3" loop></audio>
+        <audio id="mouthforwar" src="music/mouthforwar.mp3" loop></audio>
+        <audio id="thislove" src="music/thislove.mp3" loop></audio>
+        <audio id="rise" src="music/rise.mp3" loop></audio>
+        <audio id="piss" src="music/piss.mp3" loop></audio>
+        <audio id="floods" src="music/floods.mp3" loop></audio>
+        <audio id="10s" src="music/10s.mp3" loop></audio>
+        <audio id="dragthewaters" src="music/dragthewaters.mp3" loop></audio>
+        <audio id="cowboysfromhell" src="music/cowboysfromhell.mp3" loop></audio>
+        <audio id="heresy" src="music/heresy.mp3" loop></audio>
 
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v9.9.2</h2>
+            <p>Changed the songs in jukebox and changed volume thingy.</p>
             <h2>v9.9.1</h2>
             <p>Minor bug changes</p>
             <h2>v9.9</h2>
